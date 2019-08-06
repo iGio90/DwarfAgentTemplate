@@ -1,1 +1,1 @@
-putBreakpoint(findExport('open'));
+putBreakpoint(findExport('strstr'));
