@@ -1,0 +1,18 @@
+{
+  "name": "dwarf-agent-template",
+  "version": "1.0.0",
+  "description": "Dwarf agent template ready to be filled",
+  "main": "src/agent.ts",
+  "license": "LICENSE.md",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "frida-compile src/agent.ts -o agent.js",
+    "watch": "frida-compile src/agent.ts -o agent.js -w"
+  },
+  "devDependencies": {
+    "@types/dwarf-typings": "git@github.com:iGio90/DwarfTypings.git",
+    "@types/frida-gum": "^13.0.0",
+    "@types/node": "^12.0.4",
+    "frida-compile": "^9.0.2"
+  }
+}
